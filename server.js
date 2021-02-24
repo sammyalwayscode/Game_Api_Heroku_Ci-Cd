@@ -57,6 +57,8 @@ mongoose.connection.once('open', () => {
   console.log('Database connection failed.....')
 });
 
+console.log("All Codes Working Fine")
+
 
 // creating an instance of express
 
@@ -65,7 +67,7 @@ app.use(cors());
 app.use(express.json());
 // app.use(express.static('public'))
 
-app.use('/api/students/image', express.static('./uploads'))
+// app.use('/api/students/image', express.static('./uploads'))
 app.use('/api', router);
 
 
